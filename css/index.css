@@ -1,4 +1,70 @@
 /* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+.navbar {
+  background-color: black;
+  opacity: 0.8;
+  width: 100%;
+  margin: 0 auto;
+  height: 100px;
+  border-bottom: 2px solid lightseagreen;
+  z-index: 10;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .title {
+  color: white;
+  font-size: 30px;
+  margin: 20px;
+}
+.navbar .link-container {
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar .link {
+  color: white;
+  margin: 0 20px;
+}
+.banner {
+  background: url('/assets/coding.jpeg');
+  background-size: cover;
+  background-color: aquamarine;
+  background-position: center;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.banner-content {
+  width: 500px;
+  display: flex;
+  height: 500px;
+  flex-direction: column;
+  margin: 300px auto;
+}
+.content {
+  top: 100vh;
+  height: 1200px;
+  position: relative;
+  background-color: white;
+}
+.banner-text {
+  color: white;
+  left: 25%;
+  top: 40%;
+  font-size: 60px;
+}
+button {
+  color: white;
+  right: 25%;
+  top: 40%;
+  font-size: 60px;
+  border: 2px solid aquamarine;
+  border-radius: 10px;
+  background-color: black;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -144,69 +210,4 @@ h5 {
   font-family: 'Bangers', cursive;
   letter-spacing: 1px;
   margin-bottom: 15px;
-}
-.navbar {
-  background-color: black;
-  opacity: 0.8;
-  width: 100%;
-  margin: 0 auto;
-  height: 100px;
-  border-bottom: 2px solid lightseagreen;
-  z-index: 10;
-  position: fixed;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.title {
-  color: white;
-  font-size: 30px;
-  margin: 20px;
-}
-.link {
-  color: white;
-}
-.link-container {
-  margin: 20px;
-  width: 20%;
-  display: flex;
-  justify-content: space-between;
-}
-.banner {
-  background: url('/assets/coding.jpeg');
-  background-size: cover;
-  background-color: aquamarine;
-  /* position: fixed; */
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-.banner-content {
-  width: 500px;
-  display: flex;
-  height: 500px;
-  flex-direction: column;
-  margin: 300px auto;
-}
-.content {
-  top: 100vh;
-  height: 1200px;
-  position: relative;
-  background-color: white;
-}
-.banner-text {
-  color: white;
-  left: 25%;
-  top: 40%;
-  font-size: 60px;
-}
-button {
-  color: white;
-  right: 25%;
-  top: 40%;
-  font-size: 60px;
-  border: 2px solid aquamarine;
-  border-radius: 10px;
-  background-color: black;
 }

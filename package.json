@@ -17,7 +17,8 @@
     "url": "https://github.com/angel-torres/portfolio/issues"
   },
   "homepage": "https://github.com/angel-torres/portfolio#readme",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "less": "^3.9.0",
     "less-watch-compiler": "^1.13.0"
   }
