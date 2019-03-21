@@ -1,7 +1,7 @@
 /* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
 .navbar {
   background-color: black;
-  opacity: 0.8;
+  opacity: 1;
   width: 100%;
   margin: 0 auto;
   height: 100px;
@@ -25,6 +25,7 @@
 .navbar .link {
   color: white;
   margin: 0 20px;
+  cursor: pointer;
 }
 .banner {
   background: url('/assets/coding.jpeg');
