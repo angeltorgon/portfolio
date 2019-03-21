@@ -1,6 +1,6 @@
 /* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
 .navbar {
-  background-color: black;
+  background-color: white;
   opacity: 1;
   width: 100%;
   margin: 0 auto;
@@ -11,9 +11,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  color: black;
+  transition: 0.7s ease-in-out;
 }
 .navbar .title {
-  color: white;
   font-size: 30px;
   margin: 20px;
 }
@@ -23,7 +24,6 @@
   justify-content: space-between;
 }
 .navbar .link {
-  color: white;
   margin: 0 20px;
   cursor: pointer;
 }
