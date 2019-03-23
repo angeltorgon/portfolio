@@ -50,7 +50,7 @@
   right: 25%;
   top: 40%;
   font-size: 30px;
-  border: 2px solid aquamarine;
+  border: 2px solid white;
   border-radius: 5px;
   background-color: black;
   transition: 0.7s;
@@ -58,8 +58,7 @@
   padding: 20px;
 }
 .banner button:hover {
-  color: black;
-  background-color: aquamarine;
+  border: 2px solid aquamarine;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -208,18 +207,18 @@ h5 {
   margin-bottom: 15px;
 }
 .navbar {
-  background-color: white;
+  background-color: black;
   opacity: 1;
   width: 100%;
   margin: 0 auto;
   height: 100px;
-  border-bottom: 2px solid lightseagreen;
+  border-bottom: 2px solid whitesmoke;
   z-index: 10;
   position: fixed;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: black;
+  color: white;
   transition: 0.7s ease-in-out;
 }
 .navbar .title {
