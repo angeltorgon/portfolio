@@ -10,7 +10,7 @@
   display: flex;
   flex-direction: column;
 }
-.banner-content {
+.banner .banner-content {
   width: 500px;
   display: flex;
   height: 500px;
@@ -18,23 +18,34 @@
   margin: 300px auto;
   align-items: center;
 }
-.content {
+.banner .content {
   top: 100vh;
   height: 1200px;
   position: relative;
   background-color: white;
 }
-.banner-text {
+.banner .banner-text {
   color: white;
   left: 25%;
   top: 40%;
   font-size: 30px;
 }
-.banner-name {
+.banner .banner-name {
   color: white;
   font-size: 50px;
 }
-button {
+.banner .profile-picture {
+  width: 164px;
+  height: 220px;
+  margin-bottom: 40px;
+  border-radius: 50%;
+  border: 5px solid grey;
+  transition: 0.5s;
+}
+.banner .profile-picture:hover {
+  border: 5px solid white;
+}
+.banner button {
   color: white;
   right: 25%;
   top: 40%;
@@ -46,7 +57,7 @@ button {
   margin-top: 50px;
   padding: 20px;
 }
-button:hover {
+.banner button:hover {
   color: black;
   background-color: aquamarine;
 }
