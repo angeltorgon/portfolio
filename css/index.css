@@ -218,16 +218,17 @@ h5 {
   position: fixed;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   color: white;
   transition: 0.7s ease-in-out;
 }
 .navbar .title {
   font-size: 30px;
-  margin: 20px;
+  position: absolute;
+  top: 35px;
+  left: 20px;
 }
 .navbar .link-container {
-  margin: 20px;
   justify-content: space-between;
   height: 50px;
   display: flex;
@@ -240,7 +241,9 @@ h5 {
 }
 .navbar .menu-buttons {
   display: none;
-  margin: 20px;
+  position: absolute;
+  top: 25px;
+  right: 20px;
   transition: 0.5s ease-in-out;
 }
 .navbar .menu-buttons:hover {
@@ -279,6 +282,7 @@ h5 {
 }
 .navbar-expanded .title {
   display: none;
+  transition: 0.5s ease-in-out;
 }
 .navbar-expanded .link-container {
   flex-direction: column;
@@ -292,12 +296,6 @@ h5 {
 .navbar-expanded .link-container .link {
   font-size: 30px;
   height: 75px;
-}
-.navbar-expanded .menu-buttons {
-  display: block;
-  position: absolute;
-  top: 20px;
-  right: 20px;
 }
 .main-button {
   color: white;
