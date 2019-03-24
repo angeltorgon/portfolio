@@ -39,11 +39,11 @@
   height: 220px;
   margin-bottom: 40px;
   border-radius: 50%;
-  border: 5px solid white;
+  border: 2px solid white;
   transition: 0.5s;
 }
 .banner .profile-picture:hover {
-  border: 5px solid powderblue;
+  border: 2px solid powderblue;
 }
 .banner button {
   color: white;
@@ -213,7 +213,7 @@ h5 {
   width: 100%;
   margin: 0 auto;
   height: 100px;
-  border-bottom: 2px solid whitesmoke;
+  border-bottom: 1px solid whitesmoke;
   z-index: 10;
   position: fixed;
   display: flex;
@@ -232,6 +232,27 @@ h5 {
   height: 50px;
   display: flex;
   align-items: center;
+}
+@media (max-width: 800px) {
+  .navbar .link-container {
+    display: none;
+  }
+}
+.navbar .menu-buttons {
+  display: none;
+  margin: 20px;
+  transition: 0.5s ease-in-out;
+}
+.navbar .menu-buttons:hover {
+  transform: scale(1.05);
+}
+@media (max-width: 800px) {
+  .navbar .menu-buttons {
+    display: inline;
+  }
+}
+.navbar .menu-buttons .exit {
+  display: none;
 }
 .navbar .link {
   margin: 0 20px;
