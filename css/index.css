@@ -265,9 +265,28 @@ h5 {
 }
 .navbar .link:hover {
   border-bottom: 3px solid white;
+  transform: scale(1.05);
 }
 .navbar .link:active {
   border-bottom: 3px solid white;
+}
+.navbar-expanded {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.8;
+}
+.navbar-expanded .title {
+  display: none;
+}
+.navbar-expanded .link-container {
+  flex-direction: column;
+  height: 500px;
+}
+.navbar-expanded .link-container .link {
+  font-size: 30px;
+  height: 75px;
 }
 .main-button {
   color: white;
