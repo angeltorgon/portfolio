@@ -70,6 +70,7 @@
     align-items: center;
     justify-content: center;
     opacity: .8;
+
     .title {
         display: none;
     }
@@ -78,9 +79,21 @@
         flex-direction: column;
         height: 500px;
 
+        @media(max-width:800px) {
+            display: flex;
+        }
+
         .link {
             font-size: 30px;
             height: 75px;
         }
+    }
+
+    .menu-buttons {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+
     }
 }

@@ -284,9 +284,20 @@ h5 {
   flex-direction: column;
   height: 500px;
 }
+@media (max-width: 800px) {
+  .navbar-expanded .link-container {
+    display: flex;
+  }
+}
 .navbar-expanded .link-container .link {
   font-size: 30px;
   height: 75px;
+}
+.navbar-expanded .menu-buttons {
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 .main-button {
   color: white;
