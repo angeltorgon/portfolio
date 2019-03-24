@@ -2,7 +2,7 @@
 .banner {
   background: url('/assets/coding.jpg');
   background-size: cover;
-  background-color: aquamarine;
+  background-color: white;
   background-position: center;
   position: relative;
   height: 100vh;
@@ -43,7 +43,7 @@
   transition: 0.5s;
 }
 .banner .profile-picture:hover {
-  border: 5px solid aquamarine;
+  border: 5px solid powderblue;
 }
 .banner button {
   color: white;
@@ -58,7 +58,7 @@
   padding: 20px;
 }
 .banner button:hover {
-  border: 2px solid aquamarine;
+  border: 2px solid powderblue;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -242,8 +242,23 @@ h5 {
   transition: 0.5s ease-in-out;
 }
 .navbar .link:hover {
-  border-bottom: 3px solid aquamarine;
+  border-bottom: 3px solid powderblue;
 }
 .navbar .link:active {
-  border-bottom: 3px solid aquamarine;
+  border-bottom: 3px solid powderblue;
+}
+.main-button {
+  color: white;
+  right: 25%;
+  top: 40%;
+  font-size: 30px;
+  border: 2px solid white;
+  border-radius: 5px;
+  background-color: black;
+  transition: 0.7s;
+  margin-top: 50px;
+  padding: 20px;
+}
+.main-button:hover {
+  border: 2px solid powderblue;
 }
