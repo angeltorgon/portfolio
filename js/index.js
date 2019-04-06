@@ -28,11 +28,11 @@ hamburger.addEventListener("click", function(e) {
     e.preventDefault();
     hamburger.style.display = "none";
     exit.style.display = "inline";
+    title.classList.add("title-expanded");
     navbar.classList.add("navbar-expanded");
+    linkContainer.classList.add("link-container-expanded");
     setTimeout(function(){
-        title.classList.add("title-expanded");
-        linkContainer.classList.add("link-container-expanded");
-    }, 1000);
+    }, 500);
     // setTimeout(show, 3000)
 })
 
@@ -41,9 +41,9 @@ exit.addEventListener("click", function(e) {
     navbar.classList.remove("navbar-expanded");
     hamburger.style.display = "inline";
     exit.style.display = "none";
+    title.classList.remove("title-expanded");
+    linkContainer.classList.remove("link-container-expanded");
     setTimeout(function(){ 
-        title.classList.remove("title-expanded");
-        linkContainer.classList.remove("link-container-expanded");
-    }, 1000);
+    }, 200);
     // setTimeout(hide, 3000)
 })

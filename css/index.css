@@ -219,23 +219,33 @@ h5 {
   align-items: center;
   justify-content: flex-end;
   color: white;
-  transition: 0.7s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+@media (max-width: 800px) {
+  .navbar {
+    align-items: center;
+    justify-content: center;
+  }
 }
 .navbar .title {
+  transition: 0.5s ease-in-out;
   font-size: 30px;
   position: absolute;
   top: 35px;
   left: 20px;
 }
 .navbar .link-container {
+  display: flex;
   justify-content: space-between;
   height: 50px;
-  display: flex;
   align-items: center;
 }
 @media (max-width: 800px) {
   .navbar .link-container {
-    display: none;
+    transition: 0.8s ease-in-out;
+    flex-direction: column;
+    height: 500px;
+    opacity: 0;
   }
 }
 .navbar .menu-buttons {
@@ -273,19 +283,18 @@ h5 {
   border-bottom: 3px solid white;
 }
 .navbar-expanded {
+  transition: 0.5s ease-in-out;
   height: 100vh;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0.8;
+  opacity: 0.7;
 }
 .navbar-expanded .title-expanded {
-  display: none;
-  transition: 0.5s ease-in-out;
+  transition: 0.3s ease-in-out;
+  opacity: 0;
 }
 .navbar-expanded .link-container-expanded {
-  flex-direction: column;
-  height: 500px;
+  transition: 0.2s ease-in-out;
+  opacity: 1;
 }
 @media (max-width: 800px) {
   .navbar-expanded .link-container-expanded {
@@ -295,6 +304,7 @@ h5 {
 .navbar-expanded .link-container-expanded .link {
   font-size: 30px;
   height: 75px;
+  transition: 0.2s ease-in-out;
 }
 .main-button {
   color: white;
