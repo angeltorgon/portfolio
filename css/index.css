@@ -1,6 +1,5 @@
 /* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
 .banner {
-  background: url('/img/coding.jpg');
   background-size: cover;
   background-color: white;
   background-position: center;
@@ -15,31 +14,31 @@
   display: flex;
   height: 500px;
   flex-direction: column;
-  margin: 300px auto;
+  margin: 200px auto;
   align-items: center;
 }
 .banner .content {
   top: 100vh;
   height: 1200px;
   position: relative;
-  background-color: white;
+  background-color: #0a0a0a;
 }
 .banner .banner-text {
-  color: white;
+  color: #141414;
   left: 25%;
   top: 40%;
   font-size: 30px;
 }
 .banner .banner-name {
-  color: white;
+  color: #141414;
   font-size: 50px;
 }
 .banner .profile-picture {
-  width: 164px;
-  height: 220px;
+  width: 350px;
+  height: auto;
   margin-bottom: 40px;
-  border-radius: 50%;
-  border: 2px solid white;
+  border-radius: 5px;
+  border: 1px solid #766f6f;
   transition: 0.5s;
 }
 .banner .profile-picture:hover {
