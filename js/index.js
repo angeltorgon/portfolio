@@ -25,7 +25,6 @@ arrow.addEventListener("mouseleave", function() {
 });
 
 arrow.addEventListener("click", function() {
-    // document.documentElement.scrollTop = 1000;
     window.scroll({
         top: 1000, 
         left: 0, 
