@@ -24,6 +24,15 @@ arrow.addEventListener("mouseleave", function() {
     portfolioArrow.classList.remove("portfolio-arrow-hover");
 });
 
+arrow.addEventListener("click", function() {
+    // document.documentElement.scrollTop = 1000;
+    window.scroll({
+        top: 1000, 
+        left: 0, 
+        behavior: 'smooth'
+      });
+});
+
 hamburger.addEventListener("click", function(e) {
     e.preventDefault();
     hamburger.style.display = "none";

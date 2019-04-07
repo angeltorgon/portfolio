@@ -1,82 +1,3 @@
-/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
-.banner {
-  background-size: cover;
-  background-color: white;
-  background-position: center;
-  position: relative;
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-.banner .banner-content {
-  width: 500px;
-  display: flex;
-  height: 500px;
-  flex-direction: column;
-  margin: 200px auto;
-  margin-bottom: 100px;
-  align-items: center;
-}
-.banner .content {
-  top: 100vh;
-  height: 1200px;
-  position: relative;
-  background-color: #0a0a0a;
-}
-.banner .banner-text {
-  color: #141414;
-  left: 25%;
-  top: 40%;
-  font-size: 30px;
-}
-.banner .banner-name {
-  color: #141414;
-  font-size: 50px;
-}
-.banner .profile-picture {
-  width: 350px;
-  height: auto;
-  margin-bottom: 40px;
-  border-radius: 5px;
-  border: 1px solid #766f6f;
-  transition: 0.5s;
-}
-.banner .profile-picture:hover {
-  transform: scale(1.03);
-}
-.banner .portfolio-arrow {
-  opacity: 0;
-  font-size: 10px;
-  margin: 0 auto;
-  margin-top: 80px;
-  z-index: 10px;
-  transform: translateY(40px);
-  transition: 0.3s ease-in-out;
-}
-.banner .portfolio-arrow-hover {
-  transform: translateY(20px);
-  opacity: 1;
-}
-.banner .arrow {
-  margin: 0 auto;
-  transform: rotate(-135deg);
-  width: 60px;
-  height: 60px;
-  background: transparent;
-  text-indent: -9999px;
-  border-top: 2px solid #bfbfbf;
-  border-left: 2px solid #bfbfbf;
-  transition: all 250ms ease-in-out;
-  text-decoration: none;
-  color: transparent;
-}
-.banner .arrow:hover {
-  border-color: gray;
-  border-width: 2px;
-  height: 65px;
-  width: 65px;
-}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -223,6 +144,22 @@ h5 {
   letter-spacing: 1px;
   margin-bottom: 15px;
 }
+.main-button {
+  color: white;
+  right: 25%;
+  top: 40%;
+  font-size: 30px;
+  border: 2px solid white;
+  border-radius: 5px;
+  background-color: black;
+  transition: 0.7s;
+  margin-top: 50px;
+  padding: 20px;
+  cursor: pointer;
+}
+.main-button:hover {
+  transform: scale(1.03);
+}
 .navbar {
   background-color: #1a677e;
   opacity: 1;
@@ -331,19 +268,86 @@ h5 {
   border-bottom: 3px solid white;
   transform: scale(1.05);
 }
-.main-button {
-  color: white;
-  right: 25%;
+/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+.banner {
+  background-size: cover;
+  background-color: #fcfcfc;
+  background-position: center;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.banner .banner-content {
+  width: 500px;
+  display: flex;
+  height: 500px;
+  flex-direction: column;
+  margin: 200px auto;
+  margin-bottom: 100px;
+  align-items: center;
+}
+.banner .content {
+  top: 100vh;
+  height: 1200px;
+  position: relative;
+  background-color: #0a0a0a;
+}
+.banner .banner-text {
+  color: #141414;
+  left: 25%;
   top: 40%;
   font-size: 30px;
-  border: 2px solid white;
-  border-radius: 5px;
-  background-color: black;
-  transition: 0.7s;
-  margin-top: 50px;
-  padding: 20px;
-  cursor: pointer;
 }
-.main-button:hover {
+.banner .banner-name {
+  color: #141414;
+  font-size: 50px;
+}
+.banner .profile-picture {
+  width: 350px;
+  height: auto;
+  margin-bottom: 40px;
+  border-radius: 5px;
+  border: 1px solid #766f6f;
+  transition: 0.5s;
+}
+.banner .profile-picture:hover {
   transform: scale(1.03);
+}
+.portfolio-arrow {
+  opacity: 0;
+  font-size: 10px;
+  margin: 0 auto;
+  margin-top: 80px;
+  z-index: 10px;
+  transform: translateY(40px);
+  transition: 0.3s ease-in-out;
+}
+.portfolio-arrow-hover {
+  transform: translateY(20px);
+  opacity: 1;
+  color: #1a677e;
+}
+.arrow {
+  margin: 0 auto;
+  transform: rotate(-135deg);
+  width: 60px;
+  height: 60px;
+  background: transparent;
+  text-indent: -9999px;
+  border-top: 2px solid #bfbfbf;
+  border-left: 2px solid #bfbfbf;
+  transition: all 250ms ease-in-out;
+  text-decoration: none;
+  color: transparent;
+}
+.arrow:hover {
+  border-color: #1a677e;
+  border-width: 2px;
+  height: 65px;
+  width: 65px;
+}
+.portfolio-content {
+  height: 100vh;
 }
