@@ -15,6 +15,7 @@
   height: 500px;
   flex-direction: column;
   margin: 200px auto;
+  margin-bottom: 100px;
   align-items: center;
 }
 .banner .content {
@@ -44,21 +45,25 @@
 .banner .profile-picture:hover {
   transform: scale(1.03);
 }
-.banner button {
-  color: white;
-  right: 25%;
-  top: 40%;
-  font-size: 30px;
-  border: 2px solid white;
-  border-radius: 5px;
-  background-color: black;
-  transition: 0.7s;
-  margin-top: 50px;
-  padding: 20px;
-  cursor: pointer;
+.banner .arrow {
+  margin: 0 auto;
+  margin-top: 80px;
+  transform: rotate(-135deg);
+  width: 60px;
+  height: 60px;
+  background: transparent;
+  text-indent: -9999px;
+  border-top: 2px solid #bfbfbf;
+  border-left: 2px solid #bfbfbf;
+  transition: all 250ms ease-in-out;
+  text-decoration: none;
+  color: transparent;
 }
-.banner button:hover {
-  transform: scale(1.03);
+.banner .arrow:hover {
+  border-color: gray;
+  border-width: 2px;
+  height: 65px;
+  width: 65px;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126

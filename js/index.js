@@ -24,7 +24,7 @@ hamburger.addEventListener("click", function(e) {
         linkContainer.classList.add("link-container-expanded");
     }, 200);
     // setTimeout(show, 3000)
-})
+});
 
 exit.addEventListener("click", function(e) {
     e.preventDefault();
@@ -34,5 +34,5 @@ exit.addEventListener("click", function(e) {
     title.classList.remove("title-expanded");
     setTimeout(function(){ 
         linkContainer.classList.remove("link-container-expanded");
-    }, 300);
-})
+    }, 400);
+});

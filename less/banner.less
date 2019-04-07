@@ -17,6 +17,7 @@
         height: 500px;
         flex-direction: column;
         margin: 200px auto;
+        margin-bottom: 100px;
         align-items: center;
     }
     
@@ -51,10 +52,33 @@
             transform: scale(1.03);
         }
     }
+    // button {
+    //     .main-button()
+    // }
 
-    button {
-        .main-button()
+    .arrow {
+        margin: 0 auto;
+        margin-top: 80px;
+        transform: rotate(-135deg);
+        width: 60px;
+        height: 60px;
+        background: transparent;
+        text-indent: -9999px;
+        border-top: 2px solid #bfbfbf;
+        border-left: 2px solid #bfbfbf;
+        transition: all 250ms ease-in-out;
+        text-decoration: none;
+        color: transparent;
+    
+        &:hover {
+            border-color: gray;
+            border-width: 2px;
+            height: 65px;
+            width: 65px;
+      }
+
     }
+      
 }
 
 
