@@ -3,17 +3,7 @@ const navbar = document.querySelector(".navbar");
 const title = document.querySelector(".title");
 const hamburger = document.querySelector(".hamburger");
 const exit = document.querySelector(".exit");
-const linkContainer = document.querySelector(".link-container")
-
-const show = function() {
-    hamburger.style.display = "none";
-    exit.style.display = "inline";
-}
-
-const hide = function() {
-    hamburger.style.display = "inline";
-    exit.style.display = "none";
-}
+const linkContainer = document.querySelector(".link-container");
 
 this.addEventListener("scroll", function(e) {
     const scroll = document.documentElement.scrollTop
@@ -30,9 +20,9 @@ hamburger.addEventListener("click", function(e) {
     exit.style.display = "inline";
     title.classList.add("title-expanded");
     navbar.classList.add("navbar-expanded");
-    linkContainer.classList.add("link-container-expanded");
     setTimeout(function(){
-    }, 500);
+        linkContainer.classList.add("link-container-expanded");
+    }, 200);
     // setTimeout(show, 3000)
 })
 
@@ -42,8 +32,7 @@ exit.addEventListener("click", function(e) {
     hamburger.style.display = "inline";
     exit.style.display = "none";
     title.classList.remove("title-expanded");
-    linkContainer.classList.remove("link-container-expanded");
     setTimeout(function(){ 
-    }, 200);
-    // setTimeout(hide, 3000)
+        linkContainer.classList.remove("link-container-expanded");
+    }, 300);
 })

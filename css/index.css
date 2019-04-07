@@ -207,7 +207,7 @@ h5 {
   margin-bottom: 15px;
 }
 .navbar {
-  background-color: #219cc2;
+  background-color: #1a677e;
   opacity: 1;
   width: 100%;
   margin: 0 auto;
@@ -260,6 +260,7 @@ h5 {
 @media (max-width: 800px) {
   .navbar .menu-buttons {
     display: inline;
+    opacity: 1;
   }
 }
 .navbar .menu-buttons .exit {
