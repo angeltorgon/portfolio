@@ -242,7 +242,6 @@ h5 {
 }
 @media (max-width: 800px) {
   .navbar .link-container {
-    transition: 0.8s ease-in-out;
     flex-direction: column;
     height: 500px;
     opacity: 0;
@@ -287,6 +286,10 @@ h5 {
   height: 100vh;
   display: flex;
   opacity: 0.7;
+  justify-content: center;
+}
+.navbar-expanded .menu-buttons {
+  display: inline;
 }
 .navbar-expanded .title-expanded {
   transition: 0.3s ease-in-out;

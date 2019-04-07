@@ -32,7 +32,7 @@ background-color: rgb(33, 156, 194);
         align-items: center;
         
         @media(max-width:800px) {
-            transition: .8s ease-in-out;
+            // transition: .8s ease-in-out;
             flex-direction: column;
             height: 500px;
             opacity: 0;
@@ -79,7 +79,11 @@ background-color: rgb(33, 156, 194);
     height: 100vh;
     display: flex;
     opacity: .7;
+    justify-content: center;
 
+    .menu-buttons {
+        display: inline;
+    }
     .title-expanded {
         transition: .3s ease-in-out;
         opacity: 0;
