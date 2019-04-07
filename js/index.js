@@ -4,14 +4,24 @@ const title = document.querySelector(".title");
 const hamburger = document.querySelector(".hamburger");
 const exit = document.querySelector(".exit");
 const linkContainer = document.querySelector(".link-container");
+const arrow = document.querySelector(".arrow");
+const portfolioArrow = document.querySelector(".portfolio-arrow");
 
 this.addEventListener("scroll", function(e) {
-    const scroll = document.documentElement.scrollTop
+    const scroll = document.documentElement.scrollTop;
     if (scroll > 0) {
         document.querySelector(".navbar").style.opacity = ".7";
     } else {
         document.querySelector(".navbar").style.opacity = "1";
     }
+});
+
+arrow.addEventListener("mouseenter", function() {
+    portfolioArrow.classList.add("portfolio-arrow-hover");
+});
+
+arrow.addEventListener("mouseleave", function() {
+    portfolioArrow.classList.remove("portfolio-arrow-hover");
 });
 
 hamburger.addEventListener("click", function(e) {
