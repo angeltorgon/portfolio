@@ -4,7 +4,7 @@ const title = document.querySelector(".title");
 const hamburger = document.querySelector(".hamburger");
 const exit = document.querySelector(".exit");
 const linkContainer = document.querySelector(".link-container");
-const arrow = document.querySelector(".arrow");
+const arrows = document.querySelectorAll(".arrow");
 const portfolioArrow = document.querySelector(".portfolio-arrow");
 
 this.addEventListener("scroll", function(e) {
@@ -16,21 +16,24 @@ this.addEventListener("scroll", function(e) {
     }
 });
 
-arrow.addEventListener("mouseenter", function() {
-    portfolioArrow.classList.add("portfolio-arrow-hover");
-});
+arrows.forEach(function(arrow) {
+    arrow.addEventListener("mouseenter", function() {
+        portfolioArrow.classList.add("portfolio-arrow-hover");
+    });
+    
+    arrow.addEventListener("mouseleave", function() {
+        portfolioArrow.classList.remove("portfolio-arrow-hover");
+    });
+    
+    arrow.addEventListener("click", function() {
+        window.scroll({
+            top: 1000, 
+            left: 0, 
+            behavior: 'smooth'
+          });
+    });
 
-arrow.addEventListener("mouseleave", function() {
-    portfolioArrow.classList.remove("portfolio-arrow-hover");
-});
-
-arrow.addEventListener("click", function() {
-    window.scroll({
-        top: 1000, 
-        left: 0, 
-        behavior: 'smooth'
-      });
-});
+})
 
 hamburger.addEventListener("click", function(e) {
     e.preventDefault();
