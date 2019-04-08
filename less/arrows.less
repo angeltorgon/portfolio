@@ -1,0 +1,37 @@
+.portfolio-arrow {
+    opacity: 0;
+    font-size: 10px;
+    margin: 0 auto;
+    margin-top: 80px;
+    z-index: 10px;
+    transform: translateY(40px);
+    transition: .3s ease-in-out;
+}
+
+.portfolio-arrow-hover {
+    transform: translateY(20px);
+    opacity: 1;
+    color: rgb(0, 0, 0);
+} 
+
+.arrow {
+    margin: 0 auto;
+    transform: rotate(-135deg);
+    width: 60px;
+    height: 60px;
+    background: transparent;
+    text-indent: -9999px;
+    border-top: 2px solid #bfbfbf;
+    border-left: 2px solid #bfbfbf;
+    transition: all 250ms ease-in-out;
+    text-decoration: none;
+    color: transparent;
+
+    &:hover {
+        border-color: rgb(7, 7, 7);
+        border-width: 2px;
+        height: 65px;
+        width: 65px;
+    }
+
+}
