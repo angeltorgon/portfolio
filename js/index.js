@@ -6,6 +6,7 @@ const exit = document.querySelector(".exit");
 const linkContainer = document.querySelector(".link-container");
 const arrow = document.querySelector(".arrow");
 const portfolioArrow = document.querySelector(".portfolio-arrow");
+//==================================== Navbar
 
 this.addEventListener("scroll", function(e) {
     const scroll = document.documentElement.scrollTop;
@@ -16,22 +17,6 @@ this.addEventListener("scroll", function(e) {
     }
 });
 
-
-arrow.addEventListener("mouseenter", function() {
-    portfolioArrow.classList.add("portfolio-arrow-hover");
-});
-
-arrow.addEventListener("mouseleave", function() {
-    portfolioArrow.classList.remove("portfolio-arrow-hover");
-});
-
-arrow.addEventListener("click", function() {
-    window.scroll({
-        top: 1000, 
-        left: 0, 
-        behavior: 'smooth'
-        });
-});
 
 hamburger.addEventListener("click", function(e) {
     e.preventDefault();
@@ -54,4 +39,31 @@ exit.addEventListener("click", function(e) {
     setTimeout(function(){ 
         linkContainer.classList.remove("link-container-expanded");
     }, 400);
+});
+
+//==================================== Components
+
+//================ Arrow
+
+class Arrow {
+    constructor(element) {
+        this.element = element;
+        
+    }
+}
+
+arrow.addEventListener("mouseenter", function() {
+    portfolioArrow.classList.add("portfolio-arrow-hover");
+});
+
+arrow.addEventListener("mouseleave", function() {
+    portfolioArrow.classList.remove("portfolio-arrow-hover");
+});
+
+arrow.addEventListener("click", function() {
+    window.scroll({
+        top: 1000, 
+        left: 0, 
+        behavior: 'smooth'
+        });
 });
