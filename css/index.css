@@ -335,7 +335,6 @@ h5 {
   width: 60px;
   height: 60px;
   background: transparent;
-  text-indent: -9999px;
   border-top: 2px solid #bfbfbf;
   border-left: 2px solid #bfbfbf;
   transition: all 250ms ease-in-out;
