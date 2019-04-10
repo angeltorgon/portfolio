@@ -48,7 +48,6 @@ exit.addEventListener("click", function(e) {
 class Arrow {
     constructor(element) {
         this.element = element;
-        
     }
 }
 
