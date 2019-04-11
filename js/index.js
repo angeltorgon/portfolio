@@ -45,26 +45,36 @@ exit.addEventListener("click", function(e) {
 //================ Arrow
 
 const arrow = document.querySelector(".arrow");
+const arrows = document.querySelectorAll(".arrow-container")
 const portfolioArrow = document.querySelector(".arrow-pop-up");
 
 class Arrow {
     constructor(element) {
         this.element = element;
-    }
-}
-
-arrow.addEventListener("mouseenter", function() {
-    portfolioArrow.classList.add("portfolio-arrow-hover");
-});
-
-arrow.addEventListener("mouseleave", function() {
-    portfolioArrow.classList.remove("portfolio-arrow-hover");
-});
-
-arrow.addEventListener("click", function() {
-    window.scroll({
-        top: 1000, 
-        left: 0, 
-        behavior: 'smooth'
+        this.arrowPopUp = element.querySelector(".arrow-pop-up");
+        console.log(this.arrowPopUp);
+        this.element.addEventListener("mouseenter", () => {
+            this.arrowPopUp.classList.add("portfolio-arrow-hover");
         });
-});
+        this.element.addEventListener("mouseleave", () => {
+            this.arrowPopUp.classList.remove("portfolio-arrow-hover");
+        });
+        this.element.addEventListener("click", () => {
+            document.querySelector(".portfolio-content").scrollIntoView({
+                behavior: 'smooth'
+                });
+        });
+    }
+};
+
+arrows.forEach((element)=> {
+    const arrow = new Arrow(element);
+})
+
+// arrow.addEventListener("click", function() {
+//     window.scroll({
+//         top: 1000, 
+//         left: 0, 
+//         behavior: 'smooth'
+//         });
+// });
