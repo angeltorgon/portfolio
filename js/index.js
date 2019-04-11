@@ -58,7 +58,7 @@ class Arrow {
             this.arrowPopUp.classList.remove("portfolio-arrow-hover");
         });
         this.element.addEventListener("click", () => {
-            document.querySelector(".portfolio-content").scrollIntoView({
+            document.querySelector(".portfolio-container").scrollIntoView({
                 behavior: 'smooth'
                 });
         });
