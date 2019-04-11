@@ -270,17 +270,16 @@ h5 {
 }
 /* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
 .banner {
-  border: 1px solid red;
   background-size: cover;
-  background-color: #fcfcfc;
+  background-color: #fafafa;
   background-position: center;
-  position: relative;
   height: 100vh;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  position: relative;
 }
 .banner .banner-content {
   display: flex;
@@ -360,5 +359,13 @@ h5 {
   width: 65px;
 }
 .portfolio-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
   height: 100vh;
+}
+.portfolio-content .arrow-container {
+  position: absolute;
+  bottom: 50px;
 }

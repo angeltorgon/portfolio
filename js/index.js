@@ -26,7 +26,6 @@ hamburger.addEventListener("click", function(e) {
     setTimeout(function(){
         linkContainer.classList.add("link-container-expanded");
     }, 200);
-    // setTimeout(show, 3000)
 });
 
 exit.addEventListener("click", function(e) {
@@ -46,7 +45,6 @@ exit.addEventListener("click", function(e) {
 
 const arrow = document.querySelector(".arrow");
 const arrows = document.querySelectorAll(".arrow-container")
-const portfolioArrow = document.querySelector(".arrow-pop-up");
 
 class Arrow {
     constructor(element) {
@@ -70,11 +68,3 @@ class Arrow {
 arrows.forEach((element)=> {
     const arrow = new Arrow(element);
 })
-
-// arrow.addEventListener("click", function() {
-//     window.scroll({
-//         top: 1000, 
-//         left: 0, 
-//         behavior: 'smooth'
-//         });
-// });
