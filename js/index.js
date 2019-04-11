@@ -50,7 +50,8 @@ class Arrow {
     constructor(element) {
         this.element = element;
         this.arrowPopUp = element.querySelector(".arrow-pop-up");
-        console.log(this.arrowPopUp);
+        this.goToContainer = document.querySelector(`.container[data-arrow=${element.dataset.arrow}]`);
+        // console.log((element.dataset));
         this.element.addEventListener("mouseenter", () => {
             this.arrowPopUp.classList.add("portfolio-arrow-hover");
         });
@@ -58,7 +59,7 @@ class Arrow {
             this.arrowPopUp.classList.remove("portfolio-arrow-hover");
         });
         this.element.addEventListener("click", () => {
-            document.querySelector(".portfolio-container").scrollIntoView({
+            this.goToContainer.scrollIntoView({
                 behavior: 'smooth'
                 });
         });

@@ -369,3 +369,10 @@ h5 {
   position: absolute;
   bottom: 50px;
 }
+.contact-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
