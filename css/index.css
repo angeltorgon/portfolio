@@ -270,6 +270,7 @@ h5 {
 }
 /* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
 .banner {
+  border: 1px solid red;
   background-size: cover;
   background-color: #fcfcfc;
   background-position: center;
@@ -280,11 +281,12 @@ h5 {
   flex-direction: column;
 }
 .banner .banner-content {
-  max-width: 500px;
+  max-width: 400px;
   display: flex;
-  height: 500px;
+  height: 300px;
   flex-direction: column;
-  margin: 200px auto;
+  margin: 0 auto;
+  margin-top: 150px;
   margin-bottom: 100px;
   align-items: center;
 }
@@ -295,6 +297,7 @@ h5 {
   background-color: #0a0a0a;
 }
 .banner .banner-text {
+  width: 100%;
   color: #141414;
   left: 25%;
   top: 40%;
@@ -305,7 +308,7 @@ h5 {
   font-size: 50px;
 }
 .banner .profile-picture {
-  width: 350px;
+  max-width: 300px;
   height: auto;
   margin-bottom: 40px;
   border-radius: 5px;
@@ -315,7 +318,7 @@ h5 {
 .banner .profile-picture:hover {
   transform: scale(1.03);
 }
-.portfolio-arrow {
+.arrow-pop-up {
   opacity: 0;
   font-size: 10px;
   margin: 0 auto;

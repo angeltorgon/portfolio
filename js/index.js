@@ -4,8 +4,7 @@ const title = document.querySelector(".title");
 const hamburger = document.querySelector(".hamburger");
 const exit = document.querySelector(".exit");
 const linkContainer = document.querySelector(".link-container");
-const arrow = document.querySelector(".arrow");
-const portfolioArrow = document.querySelector(".portfolio-arrow");
+
 //==================================== Navbar
 
 this.addEventListener("scroll", function(e) {
@@ -44,6 +43,9 @@ exit.addEventListener("click", function(e) {
 //==================================== Components
 
 //================ Arrow
+
+const arrow = document.querySelector(".arrow");
+const portfolioArrow = document.querySelector(".arrow-pop-up");
 
 class Arrow {
     constructor(element) {

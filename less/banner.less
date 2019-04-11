@@ -2,6 +2,7 @@
 
 .banner {
     // background: url('/img/coding.jpg');
+    border: 1px solid red;
     background-size: cover;
     background-color: rgb(252, 252, 252);
     background-position: center;
@@ -12,11 +13,12 @@
     flex-direction: column;
     
     .banner-content {
-        max-width: 500px;
+        max-width: 400px;
         display: flex;
-        height: 500px;
+        height: 300px;
         flex-direction: column;
-        margin: 200px auto;
+        margin: 0 auto;
+        margin-top: 150px;
         margin-bottom: 100px;
         align-items: center;
     }
@@ -29,6 +31,7 @@
     }
     
     .banner-text {
+        width: 100%;
         color: rgb(20, 20, 20);
         left: 25%;
         top: 40%;
@@ -42,7 +45,7 @@
     }
 
     .profile-picture {
-        width: 350px;
+        max-width: 300px;
         height: auto;
         margin-bottom: 40px;
         border-radius: 5px;
