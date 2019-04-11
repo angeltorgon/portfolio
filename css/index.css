@@ -283,14 +283,13 @@ h5 {
   flex-direction: column;
 }
 .banner .banner-content {
-  margin-top: 500px;
-  width: 80%;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
   height: 300px;
   flex-direction: column;
   margin: 0 auto;
-  align-items: center;
-  justify-content: center;
   text-align: center;
 }
 .banner .content {
@@ -325,7 +324,10 @@ h5 {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: absolute;
+  bottom: 50px;
   flex-direction: column;
+  margin-top: 200px;
 }
 .arrow-content .arrow-pop-up {
   opacity: 0;
