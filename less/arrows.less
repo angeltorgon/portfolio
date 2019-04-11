@@ -2,7 +2,6 @@
     opacity: 0;
     font-size: 10px;
     margin: 0 auto;
-    margin-top: 80px;
     z-index: 10px;
     transform: translateY(40px);
     transition: .3s ease-in-out;
@@ -15,14 +14,15 @@
 } 
 
 .arrow {
-    margin: 0 auto;
+    .test();
     transform: rotate(-135deg);
+    margin-top: 300px;
     width: 60px;
     height: 60px;
     background: transparent;
     border-top: 2px solid #bfbfbf;
     border-left: 2px solid #bfbfbf;
-    transition: all 250ms ease-in-out;
+    transition: border-width 250ms ease-in-out;
     text-decoration: none;
     color: transparent;
 
