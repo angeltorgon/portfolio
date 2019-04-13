@@ -144,6 +144,26 @@ h5 {
   letter-spacing: 1px;
   margin-bottom: 15px;
 }
+/* width */
+::-webkit-scrollbar {
+  width: 5%;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #555555;
+  background-color: black;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #363636;
+  border-radius: 10px;
+  border: 1px solid black;
+  border: 2px solid #838282;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #504f4f;
+}
 .main-button {
   color: white;
   right: 25%;
