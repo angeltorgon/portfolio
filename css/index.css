@@ -134,6 +134,7 @@ html,
 body {
   height: 100%;
   font-family: 'Ubuntu', sans-serif;
+  background-color: #2d2d2d;
 }
 h1,
 h2,
@@ -192,7 +193,7 @@ h5 {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  color: white;
+  color: #bfbfbf;
   transition: 0.5s ease-in-out;
 }
 @media (max-width: 800px) {
@@ -249,13 +250,14 @@ h5 {
   padding: 20px;
   border-bottom: 3px solid transparent;
   transition: 0.5s ease-in-out;
+  color: #bfbfbf;
 }
 .navbar .link:hover {
-  border-bottom: 3px solid white;
+  border-bottom: 3px solid #bfbfbf;
   transform: scale(1.05);
 }
 .navbar .link:active {
-  border-bottom: 3px solid white;
+  border-bottom: 3px solid #bfbfbf;
 }
 .navbar-expanded {
   transition: 0.5s ease-in-out;
@@ -292,7 +294,6 @@ h5 {
 /* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
 .banner {
   background-size: cover;
-  background-color: #fafafa;
   background-position: center;
   height: 100vh;
   width: 100%;
@@ -325,7 +326,7 @@ h5 {
 }
 .banner .banner-text {
   width: 100%;
-  color: #141414;
+  color: #bfbfbf;
   left: 25%;
   top: 40%;
   font-size: 30px;
@@ -367,25 +368,26 @@ h5 {
   z-index: 10px;
   transform: translateY(40px);
   transition: 0.3s ease-in-out;
+  color: #bfbfbf;
 }
 .arrow-container .portfolio-arrow-hover {
   transform: translateY(20px);
   opacity: 1;
-  color: #000000;
+  border-color: #bfbfbf;
 }
 .arrow-container .arrow {
   transform: rotate(-135deg);
   width: 60px;
   height: 60px;
   background: transparent;
-  border-top: 2px solid #bfbfbf;
-  border-left: 2px solid #bfbfbf;
+  border-top: 2px solid #747474;
+  border-left: 2px solid #747474;
   transition: border-width 250ms ease-in-out;
   text-decoration: none;
   color: transparent;
 }
 .arrow-container .arrow:hover {
-  border-color: #070707;
+  border-color: #bfbfbf;
   border-width: 2px;
   height: 65px;
   width: 65px;
@@ -394,7 +396,6 @@ h5 {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #fafafa;
   position: relative;
   height: 100vh;
 }
@@ -406,7 +407,6 @@ h5 {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #fafafa;
   height: 100vh;
   width: 100%;
 }
