@@ -14,13 +14,17 @@
     position: relative;
     
     .banner-content {
-        // .test();
         .center();
         width: 80%;
         height: 300px;
         flex-direction: column;
         margin: 0 auto;
         text-align: center;
+
+        @media(max-width:600px) {
+            width: 100%;
+        }
+
     }
     
     .content {
@@ -36,6 +40,9 @@
         left: 25%;
         top: 40%;
         font-size: 30px;
+        @media(max-width:500px) {
+            font-size: 20px;
+        }
     }
     
     .banner-name {
