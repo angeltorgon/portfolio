@@ -49,8 +49,9 @@ const arrows = document.querySelectorAll(".arrow-container")
 class Arrow {
     constructor(element) {
         this.element = element;
-        this.arrowPopUp = element.querySelector(".arrow-pop-up");
+        this.arrowPopUp = this.element.querySelector(".arrow-pop-up");
         this.goToContainer = document.querySelector(`.container[data-arrow=${element.dataset.arrow}]`);
+        console.log(this.arrowPopUp)
         // console.log((element.dataset));
         this.element.addEventListener("mouseenter", () => {
             this.arrowPopUp.classList.add("portfolio-arrow-hover");

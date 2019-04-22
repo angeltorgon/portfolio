@@ -147,7 +147,7 @@ h5 {
 }
 /* width */
 ::-webkit-scrollbar {
-  width: 5%;
+  width: 20px;
 }
 /* Track */
 ::-webkit-scrollbar-track {
