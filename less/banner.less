@@ -14,7 +14,7 @@
     
     .banner-content {
         .center();
-        width: 80%;
+        width: 82%;
         height: 300px;
         flex-direction: column;
         margin: 0 auto;
@@ -39,17 +39,28 @@
         left: 25%;
         top: 40%;
         font-size: 28px;
+        
+        // color: #fff;
+        font-family: monospace;
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        border-right: .15em solid rgb(19, 211, 237); /* The typwriter cursor */
+        white-space: nowrap; /* Keeps the content on a single line */
+        margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+        letter-spacing: .15em; /* Adjust as needed */
+        animation: typing 3.5s steps(30, end), blink-caret .5s step-end infinite;
+      
         @media(max-width:500px) {
             font-size: 20px;
         }
+
     }
     
     .banner-name {
         color: rgb(20, 20, 20);
         font-size: 50px;
-    
+        
     }
-
+    
     .profile-picture {
         max-width: 300px;
         height: auto;
@@ -63,5 +74,15 @@
     }
 }
 
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(31, 173, 192)}
+  }
 
 
