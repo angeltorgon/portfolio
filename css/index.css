@@ -269,6 +269,9 @@ h5 {
 .navbar-expanded .menu-buttons {
   display: inline;
 }
+.navbar-expanded .menu-buttons img {
+  opacity: 0;
+}
 .navbar-expanded .title-expanded {
   transition: 0.3s ease-in-out;
   opacity: 0;
@@ -382,7 +385,7 @@ h5 {
   background: transparent;
   border-top: 2px solid #747474;
   border-left: 2px solid #747474;
-  transition: border-width 250ms ease-in-out;
+  transition: 0.4s ease-in-out;
   text-decoration: none;
   color: transparent;
 }
@@ -403,6 +406,7 @@ h5 {
   transition: border-width 5000ms ease-in-out;
   text-decoration: none;
   cursor: default;
+  transition: 0.4s ease-in-out;
 }
 .arrow-container .top:hover {
   border-color: #bfbfbf;
@@ -431,7 +435,7 @@ h5 {
   color: #bfbfbf;
 }
 .portfolio-container .projects img {
-  width: 60%;
+  width: 70%;
 }
 .contact-container {
   display: flex;
