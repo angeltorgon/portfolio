@@ -423,6 +423,12 @@ h5 {
   position: relative;
   height: 100vh;
 }
+.portfolio-container h1 {
+  position: absolute;
+  right: 20px;
+  top: 120px;
+  font-size: 25px;
+}
 .portfolio-container .arrow-container {
   position: absolute;
   bottom: 50px;
