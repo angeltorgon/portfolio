@@ -310,13 +310,13 @@ h5 {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 82%;
+  width: 800pxs;
   height: 300px;
   flex-direction: column;
   margin: 0 auto;
   text-align: center;
 }
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .banner .banner-content {
     width: 100%;
   }
@@ -333,10 +333,10 @@ h5 {
   left: 25%;
   top: 40%;
   font-size: 28px;
-  font-family: monospace;
+  font-family: 'Ubuntu', sans-serif;
   overflow: hidden;
   /* Ensures the content is not revealed until the animation */
-  border-right: 0.15em solid #13d3ed;
+  border-right: 0.15em solid #bfbfbf;
   /* The typwriter cursor */
   white-space: nowrap;
   /* Keeps the content on a single line */
@@ -346,9 +346,26 @@ h5 {
   /* Adjust as needed */
   animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
 }
-@media (max-width: 500px) {
+.banner .banner-text .name {
+  color: #5acd86;
+}
+.banner .banner-text .string {
+  color: #5acd86;
+}
+@media (max-width: 820px) {
+  .banner .banner-text {
+    font-size: 24px;
+  }
+}
+@media (max-width: 720px) {
   .banner .banner-text {
     font-size: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .banner .banner-text {
+    width: 400px;
+    font-size: 16px;
   }
 }
 .banner .banner-name {
@@ -381,7 +398,7 @@ h5 {
     border-color: transparent;
   }
   50% {
-    border-color: #1fadc0;
+    border-color: #bfbfbf;
   }
 }
 .arrow-container {
