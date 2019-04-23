@@ -269,9 +269,6 @@ h5 {
 .navbar-expanded .menu-buttons {
   display: inline;
 }
-.navbar-expanded .menu-buttons img {
-  opacity: 0;
-}
 .navbar-expanded .title-expanded {
   transition: 0.3s ease-in-out;
   opacity: 0;
