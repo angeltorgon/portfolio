@@ -9,11 +9,19 @@ const linkContainer = document.querySelector(".link-container");
 
 this.addEventListener("scroll", function(e) {
     const scroll = document.documentElement.scrollTop;
+    const arrows = document.querySelectorAll(".arrow-container");
+    console.log(arrows)
     if (scroll > 0) {
         document.querySelector(".navbar").style.opacity = ".7";
-    } else {
+        arrows.forEach(arrow => {
+            arrow.style.display = "";
+        })
+    } if (scroll === 0) {
         document.querySelector(".navbar").style.opacity = "1";
-    }
+        arrows.forEach(arrow => {
+            arrow.style.display = "block";
+        })
+    } 
 });
 
 
@@ -70,3 +78,4 @@ class Arrow {
 arrows.forEach((element)=> {
     const arrow = new Arrow(element);
 })
+

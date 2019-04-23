@@ -377,8 +377,8 @@ h5 {
 }
 .arrow-container .arrow {
   transform: rotate(-135deg);
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   background: transparent;
   border-top: 2px solid #747474;
   border-left: 2px solid #747474;
@@ -389,36 +389,49 @@ h5 {
 .arrow-container .arrow:hover {
   border-color: #bfbfbf;
   border-width: 2px;
-  height: 65px;
-  width: 65px;
+  height: 55px;
+  width: 55px;
 }
 .arrow-container .top {
-  transform: rotate(45deg);
-  width: 60px;
-  height: 60px;
-  background: transparent;
-  border-top: 2px solid #747474;
-  border-left: 2px solid #747474;
-  transition: border-width 250ms ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #747474;
+  color: #bfbfbf;
+  transition: border-width 5000ms ease-in-out;
   text-decoration: none;
-  color: transparent;
+  cursor: default;
 }
 .arrow-container .top:hover {
   border-color: #bfbfbf;
   border-width: 2px;
-  height: 65px;
-  width: 65px;
+  height: 55px;
+  width: 55px;
 }
 .portfolio-container {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #bfbfbf;
+  flex-direction: column;
   position: relative;
   height: 100vh;
 }
 .portfolio-container .arrow-container {
   position: absolute;
   bottom: 50px;
+}
+.portfolio-container .projects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  color: #bfbfbf;
+}
+.portfolio-container .projects img {
+  width: 60%;
 }
 .contact-container {
   display: flex;
