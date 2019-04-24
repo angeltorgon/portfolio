@@ -208,6 +208,9 @@ h5 {
   position: absolute;
   top: 35px;
   left: 20px;
+  cursor: pointer;
+  color: #bfbfbf;
+  text-shadow: #282828 1px 0 10px;
 }
 .navbar .link-container {
   display: flex;
@@ -254,6 +257,7 @@ h5 {
 }
 .navbar .link:hover {
   border-bottom: 3px solid #bfbfbf;
+  text-shadow: #bfbfbf 1px 0 10px;
   transform: scale(1.05);
 }
 .navbar .link:active {
@@ -293,6 +297,7 @@ h5 {
 }
 /* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
 .banner {
+  background: url('/img/profile-picture.jpg');
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -327,6 +332,8 @@ h5 {
 .banner .banner-text {
   width: 100%;
   color: #bfbfbf;
+  font-weight: 900;
+  text-shadow: #282828 1px 0 10px;
   left: 25%;
   top: 40%;
   font-size: 28px;
@@ -344,10 +351,12 @@ h5 {
   animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
 }
 .banner .banner-text .name {
-  color: #5acd86;
+  color: #bfbfbf;
+  text-shadow: #282828 1px 0 10px;
 }
 .banner .banner-text .string {
-  color: #5acd86;
+  color: #bfbfbf;
+  text-shadow: #282828 1px 0 10px;
 }
 @media (max-width: 820px) {
   .banner .banner-text {
@@ -370,8 +379,8 @@ h5 {
   font-size: 50px;
 }
 .banner .profile-picture {
-  max-width: 300px;
-  height: auto;
+  width: 100%;
+  background-size: cover;
   margin-bottom: 40px;
   border-radius: 5px;
   border: 1px solid #766f6f;
