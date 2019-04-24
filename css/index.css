@@ -202,12 +202,12 @@ h5 {
     justify-content: center;
   }
 }
-.navbar .title {
+.navbar .logo {
   transition: 0.5s ease-in-out;
   font-size: 35px;
   position: absolute;
   top: 10px;
-  left: 20px;
+  left: 40px;
   cursor: pointer;
   overflow: hidden;
   color: #bfbfbf;
@@ -215,7 +215,7 @@ h5 {
   color: #ffffff;
   text-shadow: #000000 1px 0 10px;
 }
-.navbar .title:hover {
+.navbar .logo:hover {
   transform: scale(1.03);
 }
 .navbar .link-container {
@@ -251,7 +251,7 @@ h5 {
   display: none;
 }
 .navbar .link {
-  font-size: 20px;
+  font-size: 15px;
   margin: 0 20px;
   cursor: pointer;
   display: block;
@@ -292,7 +292,7 @@ h5 {
   }
 }
 .navbar-expanded .link-container-expanded .link {
-  font-size: 30px;
+  font-size: 15px;
   height: 75px;
   transition: 0.2s ease-in-out;
 }

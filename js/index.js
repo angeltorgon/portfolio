@@ -47,6 +47,8 @@ exit.addEventListener("click", function(e) {
     }, 400);
 });
 
+
+
 //==================================== Components
 
 //================ Arrow
