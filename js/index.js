@@ -1,16 +1,40 @@
 
+//==================================== Navbar
+
 const navbar = document.querySelector(".navbar");
 const title = document.querySelector(".title");
 const hamburger = document.querySelector(".hamburger");
 const exit = document.querySelector(".exit");
 const linkContainer = document.querySelector(".link-container");
+const portfolioNavLink = document.querySelector(".portfolio-link");
+const aboutNavLink = document.querySelector(".about-link");
+const contactNavLink = document.querySelector(".contact-link");
 
-//==================================== Navbar
+const portfolioContainer = document.querySelector(".port-container");
+const aboutContainer = document.querySelector(".about-container");
+const contactContainer = document.querySelector(".contact-container");
+
+portfolioNavLink.addEventListener("click", () => {
+    portfolioContainer.scrollIntoView({
+        behavior: 'smooth'
+        });
+});
+
+aboutNavLink.addEventListener("click", () => {
+    aboutContainer.scrollIntoView({
+        behavior: 'smooth'
+        });
+});
+
+contactNavLink.addEventListener("click", () => {
+    contactContainer.scrollIntoView({
+        behavior: 'smooth'
+        });
+});
 
 this.addEventListener("scroll", function(e) {
     const scroll = document.documentElement.scrollTop;
     const arrows = document.querySelectorAll(".arrow-container");
-    console.log(arrows)
     if (scroll > 0) {
         document.querySelector(".navbar").style.opacity = ".7";
         arrows.forEach(arrow => {
