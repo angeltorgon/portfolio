@@ -159,7 +159,7 @@ h5 {
   background: #363636;
   border-radius: 10px;
   border: 1px solid black;
-  border: 2px solid #838282;
+  border: 1px solid #ffffff;
 }
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
@@ -187,7 +187,7 @@ h5 {
   width: 100%;
   margin: 0 auto;
   height: 100px;
-  border-bottom: 1px solid whitesmoke;
+  border-bottom: 1px solid #ffffff;
   z-index: 10;
   position: fixed;
   display: flex;
@@ -211,6 +211,11 @@ h5 {
   cursor: pointer;
   color: #bfbfbf;
   text-shadow: #282828 1px 0 10px;
+  color: #ffffff;
+  text-shadow: #000000 1px 0 10px;
+}
+.navbar .title:hover {
+  transform: scale(1.03);
 }
 .navbar .link-container {
   display: flex;
@@ -253,11 +258,10 @@ h5 {
   padding: 20px;
   border-bottom: 3px solid transparent;
   transition: 0.5s ease-in-out;
-  color: #bfbfbf;
+  color: #ffffff;
 }
 .navbar .link:hover {
-  border-bottom: 3px solid #bfbfbf;
-  text-shadow: #bfbfbf 1px 0 10px;
+  border-bottom: 3px solid #ffffff;
   transform: scale(1.05);
 }
 .navbar .link:active {
@@ -422,12 +426,12 @@ h5 {
   z-index: 10px;
   transform: translateY(40px);
   transition: 0.3s ease-in-out;
-  color: #bfbfbf;
+  color: #ffffff;
 }
 .arrow-container .portfolio-arrow-hover {
   transform: translateY(20px);
   opacity: 1;
-  border-color: #bfbfbf;
+  border-color: #ffffff;
 }
 .arrow-container .arrow {
   transform: rotate(-135deg);
@@ -441,7 +445,7 @@ h5 {
   color: transparent;
 }
 .arrow-container .arrow:hover {
-  border-color: #bfbfbf;
+  border-color: #ffffff;
   border-width: 2px;
   height: 55px;
   width: 55px;

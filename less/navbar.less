@@ -4,7 +4,7 @@
     width: 100%;
     margin: 0 auto;
     height: 100px;
-    border-bottom: 1px solid whitesmoke;
+    border-bottom: 1px solid rgb(255, 255, 255);
     z-index: 10;
     position: fixed;
     display: flex;
@@ -27,6 +27,12 @@
         cursor: pointer;   
         color: #bfbfbf;
         text-shadow: #282828 1px 0 10px;
+        color: #ffffff;
+        text-shadow: #000000 1px 0 10px;
+
+        &:hover {
+            transform: scale(1.03);
+        }
     }
 
     .link-container {
@@ -69,10 +75,9 @@
         padding: 20px;
         border-bottom: 3px solid transparent;
         transition: .5s ease-in-out;
-        color: #bfbfbf;        
+        color: #ffffff;
         &:hover {
-            border-bottom: 3px solid #bfbfbf;
-            text-shadow: #bfbfbf 1px 0 10px;
+            border-bottom: 3px solid #ffffff;
             transform: scale(1.05);
         }
         &:active {
