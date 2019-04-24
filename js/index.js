@@ -16,13 +16,14 @@ const contactNavLink = document.querySelector(".contact-link");
 const portfolioContainer = document.querySelector(".port-container");
 const aboutContainer = document.querySelector(".about-container");
 const contactContainer = document.querySelector(".contact-container");
-const bannerContainer = document.querySelector(".banner");
+const bannerContainer = document.querySelector(".banner-container");
 
 portfolioNavLink.addEventListener("click", () => {
     portfolioContainer.scrollIntoView({
         behavior: 'smooth'
         });
     navbar.classList.remove("navbar-expanded");
+    // portfolioNavLink.classList.add("link-active");
     hamburger.style.display = "inline";
     exit.style.display = "none";
 });
@@ -104,7 +105,7 @@ class Arrow {
     constructor(element) {
         this.element = element;
         this.arrowPopUp = this.element.querySelector(".arrow-pop-up");
-        this.goToContainer = document.querySelector(`.container[data-arrow=${element.dataset.arrow}]`);
+        this.goToContainer = document.querySelector(`.section[data-arrow=${element.dataset.arrow}]`);
         console.log(this.arrowPopUp)
         // console.log((element.dataset));
         this.element.addEventListener("mouseenter", () => {
