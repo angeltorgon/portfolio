@@ -1,8 +1,11 @@
 
 //==================================== Navbar
 
+const arrow = document.querySelector(".arrow");
+const arrows = document.querySelectorAll(".arrow-container")
+
 const navbar = document.querySelector(".navbar");
-const title = document.querySelector(".title");
+const logo = document.querySelector(".logo");
 const hamburger = document.querySelector(".hamburger");
 const exit = document.querySelector(".exit");
 const linkContainer = document.querySelector(".link-container");
@@ -13,23 +16,42 @@ const contactNavLink = document.querySelector(".contact-link");
 const portfolioContainer = document.querySelector(".port-container");
 const aboutContainer = document.querySelector(".about-container");
 const contactContainer = document.querySelector(".contact-container");
+const bannerContainer = document.querySelector(".banner");
 
 portfolioNavLink.addEventListener("click", () => {
     portfolioContainer.scrollIntoView({
         behavior: 'smooth'
         });
+    navbar.classList.remove("navbar-expanded");
+    hamburger.style.display = "inline";
+    exit.style.display = "none";
 });
 
 aboutNavLink.addEventListener("click", () => {
     aboutContainer.scrollIntoView({
         behavior: 'smooth'
-        });
+    });
+    navbar.classList.remove("navbar-expanded");
+    hamburger.style.display = "inline";
+    exit.style.display = "none";
 });
 
 contactNavLink.addEventListener("click", () => {
     contactContainer.scrollIntoView({
         behavior: 'smooth'
-        });
+    });
+    navbar.classList.remove("navbar-expanded");
+    hamburger.style.display = "inline";
+    exit.style.display = "none";
+});
+
+logo.addEventListener("click", () => {
+    bannerContainer.scrollIntoView({
+        behavior: 'smooth'
+    });
+    navbar.classList.remove("navbar-expanded");
+    hamburger.style.display = "inline";
+    exit.style.display = "none";
 });
 
 this.addEventListener("scroll", function(e) {
@@ -53,7 +75,7 @@ hamburger.addEventListener("click", function(e) {
     e.preventDefault();
     hamburger.style.display = "none";
     exit.style.display = "inline";
-    title.classList.add("title-expanded");
+    logo.classList.add("title-expanded");
     navbar.classList.add("navbar-expanded");
     setTimeout(function(){
         linkContainer.classList.add("link-container-expanded");
@@ -65,7 +87,7 @@ exit.addEventListener("click", function(e) {
     navbar.classList.remove("navbar-expanded");
     hamburger.style.display = "inline";
     exit.style.display = "none";
-    title.classList.remove("title-expanded");
+    logo.classList.remove("title-expanded");
     setTimeout(function(){ 
         linkContainer.classList.remove("link-container-expanded");
     }, 400);
@@ -77,8 +99,6 @@ exit.addEventListener("click", function(e) {
 
 //================ Arrow
 
-const arrow = document.querySelector(".arrow");
-const arrows = document.querySelectorAll(".arrow-container")
 
 class Arrow {
     constructor(element) {
