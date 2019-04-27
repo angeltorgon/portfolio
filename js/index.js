@@ -13,7 +13,7 @@ const portfolioNavLink = document.querySelector(".portfolio-link");
 const aboutNavLink = document.querySelector(".about-link");
 const contactNavLink = document.querySelector(".contact-link");
 
-const portfolioContainer = document.querySelector(".port-container");
+const portfolioContainer = document.querySelector(".portfolio-container");
 const aboutContainer = document.querySelector(".about-container");
 const contactContainer = document.querySelector(".contact-container");
 const bannerContainer = document.querySelector(".banner-container");
