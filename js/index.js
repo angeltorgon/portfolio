@@ -21,6 +21,15 @@ const bannerContainer = document.querySelector(".banner-container");
 const leftButton = document.querySelector(".left-button");
 const rightButton = document.querySelector(".right-button");
 
+const projOne = document.getElementById("1");
+const projTwo = document.getElementById("2");
+const projThree = document.getElementById("3");
+console.log(projOne);
+console.log(projTwo);
+console.log(projThree);
+
+
+
 leftButton.addEventListener("click", () => {
     console.log("left");
 });
