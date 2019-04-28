@@ -27,30 +27,33 @@ const projThree = document.getElementById("3");
 const projects = document.querySelectorAll(".project");
 
 
+var viewing = 1;
 projects.forEach(function(proj) {
     proj.style.display = "none";
     projOne.style.display = "flex";
+    viewing = 1;
 });
 
 leftButton.addEventListener("click", () => {
-    var viewing = 1;
+    console.log(viewing);
     if (viewing === 1) {
         projects.forEach(function(proj) {
             proj.style.display = "none";
         });
         projThree.style.display = "flex";
         viewing = 3;
-    } if (viewing === 3) {
+    } else if (viewing === 3) {
         projects.forEach(function(proj) {
             proj.style.display = "none";
         });
         projTwo.style.display = "flex";
-        viewing = 3;
-    } if (viewing === 2) {
+        viewing = 2;
+    } else if (viewing === 2) {
         projects.forEach(function(proj) {
             proj.style.display = "none";
         });
         projOne.style.display = "flex";
+        viewing = 1;
     }
     
 });
