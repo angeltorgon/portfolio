@@ -24,17 +24,18 @@ const rightButton = document.querySelector(".right-button");
 const projOne = document.getElementById("1");
 const projTwo = document.getElementById("2");
 const projThree = document.getElementById("3");
-console.log(projOne);
-console.log(projTwo);
-console.log(projThree);
-
+const projects = document.querySelectorAll(".project");
 
 
 leftButton.addEventListener("click", () => {
-    console.log("left");
+    projects.forEach(function(proj) {
+        console.log(proj)
+    })    
 });
 rightButton.addEventListener("click", () => {
-    console.log("right");
+    projects.forEach(function(proj) {
+        console.log(proj)
+    })   
 });
 
 portfolioNavLink.addEventListener("click", () => {
@@ -125,8 +126,6 @@ class Arrow {
         this.element = element;
         this.arrowPopUp = this.element.querySelector(".arrow-pop-up");
         this.goToContainer = document.querySelector(`.section[data-arrow=${element.dataset.arrow}]`);
-        console.log(this.arrowPopUp)
-        // console.log((element.dataset));
         this.element.addEventListener("mouseenter", () => {
             this.arrowPopUp.classList.add("portfolio-arrow-hover");
         });
