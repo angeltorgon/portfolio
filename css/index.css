@@ -517,6 +517,7 @@ h5 {
   align-items: center;
   width: 95%;
   color: #bfbfbf;
+  transition: 0.3s ease-in-out;
 }
 .project img {
   width: 70%;
