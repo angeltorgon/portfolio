@@ -18,6 +18,16 @@ const aboutContainer = document.querySelector(".about-container");
 const contactContainer = document.querySelector(".contact-container");
 const bannerContainer = document.querySelector(".banner-container");
 
+const leftButton = document.querySelector(".left-button");
+const rightButton = document.querySelector(".right-button");
+
+leftButton.addEventListener("click", () => {
+    console.log("left");
+});
+rightButton.addEventListener("click", () => {
+    console.log("right");
+});
+
 portfolioNavLink.addEventListener("click", () => {
     portfolioContainer.scrollIntoView({
         behavior: 'smooth'
