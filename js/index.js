@@ -2,7 +2,7 @@
 //==================================== Navbar
 
 const arrow = document.querySelector(".arrow");
-const arrows = document.querySelectorAll(".arrow-container")
+const arrows = document.querySelectorAll(".arrow-container");
 
 const navbar = document.querySelector(".navbar");
 const logo = document.querySelector(".logo");

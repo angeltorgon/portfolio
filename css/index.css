@@ -518,9 +518,12 @@ h5 {
   width: 95%;
   color: #bfbfbf;
   transition: 0.3s ease-in-out;
+  border: 1px solid pink;
 }
 .project img {
-  width: 70%;
+  width: 80%;
+  padding: 0;
+  border: 1px solid pink;
 }
 .project .project-description {
   display: flex;
@@ -529,6 +532,8 @@ h5 {
   justify-content: center;
   height: 100%;
   width: 100%;
+  padding-left: 0;
+  border: 1px solid pink;
 }
 .project .project-description h2 {
   font-size: 22px;
