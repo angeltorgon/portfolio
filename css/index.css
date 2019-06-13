@@ -515,13 +515,16 @@ h5 {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 95%;
   color: #bfbfbf;
   transition: 0.3s ease-in-out;
+  position: relative;
 }
 .project img {
-  width: 80%;
+  width: 800px;
   padding: 0;
+  position: absolute;
+  right: -250px;
+  margin-left: 5px;
 }
 .project .project-description {
   display: flex;
@@ -531,6 +534,8 @@ h5 {
   height: 100%;
   width: 100%;
   padding-left: 0;
+  position: absolute;
+  right: -250px;
 }
 .project .project-description h2 {
   font-size: 22px;
