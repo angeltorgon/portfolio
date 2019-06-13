@@ -517,25 +517,19 @@ h5 {
   align-items: center;
   color: #bfbfbf;
   transition: 0.3s ease-in-out;
-  position: relative;
+  width: 100%;
 }
 .project img {
-  width: 800px;
-  padding: 0;
-  position: absolute;
-  right: -250px;
-  margin-left: 5px;
+  width: 75%;
+  padding: 20px;
 }
 .project .project-description {
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  height: 100%;
-  width: 100%;
-  padding-left: 0;
-  position: absolute;
-  right: -250px;
+  margin-right: 40px;
+  width: 25%;
 }
 .project .project-description h2 {
   font-size: 22px;
@@ -561,15 +555,14 @@ h5 {
 .project .project-description a img {
   width: 100%;
 }
-.carousel .carousel-button-container {
-  border: 1px solid pink;
-  width: 100%;
-}
 .carousel .carousel-button-container .left-button {
   background-color: #bfbfbf;
   border-radius: 50%;
   margin: 10px;
   transform: rotate(90deg);
+  position: absolute;
+  left: 10px;
+  top: 500px;
 }
 .carousel .carousel-button-container .left-button:hover {
   transform: scale(1.05);
@@ -580,4 +573,7 @@ h5 {
   border-radius: 50%;
   margin: 10px;
   transform: rotate(-90deg);
+  position: absolute;
+  top: 500px;
+  right: 10px;
 }
