@@ -38,11 +38,9 @@ leftButton.addEventListener("click", () => {
     console.log(viewing);
     if (viewing === 1) {
         projects.forEach(function(proj) {
-            // proj.style.display = "none";
-            proj.style.width = "0";
+            proj.style.display = "none";
         });
-        // projThree.style.display = "flex";
-        projThree.style.width = "100%";
+        projThree.style.display = "flex";
         viewing = 3;
     } else if (viewing === 3) {
         projects.forEach(function(proj) {
