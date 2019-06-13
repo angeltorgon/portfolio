@@ -8,10 +8,14 @@
             position: absolute;
             left: 10px;
             top: 500px;
+            transition: .5s ease-in-out;
             
             &:hover {
-                transform: scale(1.05);
-                transform: rotate(90deg);
+                transform: rotate(90deg) scale(1.05);
+            }
+
+            @media(max-width:800px) {
+                top: 400px;
             }
         }
         
@@ -23,6 +27,15 @@
             position: absolute;
             top: 500px;
             right: 10px;
+            transition: .5s ease-in-out;
+
+            &:hover {
+                transform: rotate(-90deg) scale(1.05);
+            }
+
+            @media(max-width:800px) {
+                top: 400px;
+            }
         }
     }
 

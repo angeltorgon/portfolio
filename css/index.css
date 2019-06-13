@@ -551,6 +551,7 @@ h5 {
   .project .project-description .project-technologies {
     flex-direction: row;
     width: 100%;
+    margin-left: 30px;
   }
   .project .project-description .project-technologies h2 {
     font-size: 22px;
@@ -597,10 +598,15 @@ h5 {
   position: absolute;
   left: 10px;
   top: 500px;
+  transition: 0.5s ease-in-out;
 }
 .carousel .carousel-button-container .left-button:hover {
-  transform: scale(1.05);
-  transform: rotate(90deg);
+  transform: rotate(90deg) scale(1.05);
+}
+@media (max-width: 800px) {
+  .carousel .carousel-button-container .left-button {
+    top: 400px;
+  }
 }
 .carousel .carousel-button-container .right-button {
   background-color: #bfbfbf;
@@ -610,4 +616,13 @@ h5 {
   position: absolute;
   top: 500px;
   right: 10px;
+  transition: 0.5s ease-in-out;
+}
+.carousel .carousel-button-container .right-button:hover {
+  transform: rotate(-90deg) scale(1.05);
+}
+@media (max-width: 800px) {
+  .carousel .carousel-button-container .right-button {
+    top: 400px;
+  }
 }
