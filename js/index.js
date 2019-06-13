@@ -78,27 +78,27 @@ rightButton.addEventListener("click", () => {
     }
 });
 
-// setInterval(() => {
-//     if (viewing === 1) {
-//         projects.forEach(function(proj) {
-//             proj.style.display = "none";
-//         });
-//         projTwo.style.display = "flex";
-//         viewing = 2;
-//     } else if (viewing === 2) {
-//         projects.forEach(function(proj) {
-//             proj.style.display = "none";
-//         });
-//         projThree.style.display = "flex";
-//         viewing = 3;
-//     } else if (viewing === 3) {
-//         projects.forEach(function(proj) {
-//             proj.style.display = "none";
-//         });
-//         projOne.style.display = "flex";
-//         viewing = 1;
-//     }
-// }, 3000);
+setInterval(() => {
+    if (viewing === 1) {
+        projects.forEach(function(proj) {
+            proj.style.display = "none";
+        });
+        projTwo.style.display = "flex";
+        viewing = 2;
+    } else if (viewing === 2) {
+        projects.forEach(function(proj) {
+            proj.style.display = "none";
+        });
+        projThree.style.display = "flex";
+        viewing = 3;
+    } else if (viewing === 3) {
+        projects.forEach(function(proj) {
+            proj.style.display = "none";
+        });
+        projOne.style.display = "flex";
+        viewing = 1;
+    }
+}, 3000);
 
 portfolioNavLink.addEventListener("click", () => {
     portfolioContainer.scrollIntoView({
