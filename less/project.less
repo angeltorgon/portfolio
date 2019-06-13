@@ -7,6 +7,10 @@
     transition: .3s ease-in-out;
     width: 100%;
 
+    @media(max-width:800px) {
+        flex-direction: column;
+    }
+
     img {
         width: 75%;
         padding: 20px;
@@ -19,14 +23,43 @@
         margin-right: 40px;
         width: 25%;
 
-        h2 {
-            font-size: 22px;
+        @media(max-width:800px) {
+            width: 100%;
         }
 
-        a {
-            .button();
-            text-decoration: none;
-            padding: 10px;
+        .project-technologies {
+            .center();
+            flex-direction: column;
+            
+            @media(max-width:800px) {
+                flex-direction: row;
+                width: 100%;
+                h2 {
+                    font-size: 22px;
+                    padding: 10px;
+                }
+            }
+
+            h2 {
+                font-size: 22px;
+            }
+
+        }
+
+
+        .project-link-container {
+            
+            @media(max-width:800px) {
+                display: flex;
+                width: 100%;
+                .center();
+            }
+
+            a {
+                .button();
+                text-decoration: none;
+                padding: 10px;
+            }
         }
     }
 }

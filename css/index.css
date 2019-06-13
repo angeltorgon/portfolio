@@ -519,6 +519,11 @@ h5 {
   transition: 0.3s ease-in-out;
   width: 100%;
 }
+@media (max-width: 800px) {
+  .project {
+    flex-direction: column;
+  }
+}
 .project img {
   width: 75%;
   padding: 20px;
@@ -531,10 +536,39 @@ h5 {
   margin-right: 40px;
   width: 25%;
 }
-.project .project-description h2 {
+@media (max-width: 800px) {
+  .project .project-description {
+    width: 100%;
+  }
+}
+.project .project-description .project-technologies {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+@media (max-width: 800px) {
+  .project .project-description .project-technologies {
+    flex-direction: row;
+    width: 100%;
+  }
+  .project .project-description .project-technologies h2 {
+    font-size: 22px;
+    padding: 10px;
+  }
+}
+.project .project-description .project-technologies h2 {
   font-size: 22px;
 }
-.project .project-description a {
+@media (max-width: 800px) {
+  .project .project-description .project-link-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.project .project-description .project-link-container a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -549,10 +583,10 @@ h5 {
   text-decoration: none;
   padding: 10px;
 }
-.project .project-description a:hover {
+.project .project-description .project-link-container a:hover {
   transform: scale(1.03);
 }
-.project .project-description a img {
+.project .project-description .project-link-container a img {
   width: 100%;
 }
 .carousel .carousel-button-container .left-button {
